@@ -1,0 +1,12 @@
+0.这一章主要讲解异常
+1.异常的介绍
+2.异常捕获
+3.异常体系图,顶级类:Throwable
+4.常见的运行时异常
+5.编译时异常
+6.异常处理两种机制：捕获、抛出
+7.try catch finally的细节
+8.throws的细节
+9.自定义异常，通常继承RuntimeException
+10.throws VS throw
+11.异常的弱点：异常丢失

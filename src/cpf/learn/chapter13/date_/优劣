@@ -1,0 +1,8 @@
+1. JDK1.0便包括了一个java.util.Date类，但是其大多数方法在JDK1.1引入Calendar后就被弃用了，
+    目前，Date主要是通过new Date()和new Date(long currentTimeMillis)来相对1970-1-1的毫秒数
+    来计算目前的时间。他非常的简易，几乎不使用了；
+2. Calendar类，顾名思义，是像日历一样，包含了很多字段，可以由calendar.get(Field)来获得不同的
+    字段，缺点是没有固定的格式类、方法，只能自己构造格式，并且，一股脑给了一本日历的数据，有可能
+    我只是想要一个时分秒，这就造成了空间的浪费；并且，得到的月份居然是从0开始计数的，简直反人类
+    Calendar还不是线程安全的，也不能处理闰秒，对于高精度时间把控比较乏力。
+3. JDK8.0后，引入LocalDate、LocalTime、LocalDateTime类

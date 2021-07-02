@@ -1,0 +1,18 @@
+1.  集合的理解和好处 ：
+2.  集合的体系：单列Collection、双列Map
+3.  Collection以实现子类为主体举例，常用方法，特点，遍历方式
+4.  List接口 三种遍历方式 普通for循环也可以
+5.  ArrayList
+6.  Vector
+7.  LinkedList 以链表来存储，不用数组，增删效率高
+8.  Set接口 无序的 取出与添加顺序不一致，但取出的顺序本身是不变的
+9.  HashSet
+10. LinkedHashSet 底层是LinkedHashMap
+11. Map 键值对
+12. HashMap 是HashSet的底层机制
+13. Hashtable
+14. Properties 主讲配置文件方面
+15. TreeSet
+16. TreeMap 是TreeSet的底层机制
+17. Collections工具类
+18. 7个练习题
