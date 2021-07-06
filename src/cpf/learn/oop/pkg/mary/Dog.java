@@ -5,6 +5,6 @@ public class Dog {
     int age;
 
     public void cry(){
-        System.out.println("mary,ÍôÍôÍô...");
+        System.out.println("mary,æ±ªæ±ªæ±ª...");
     }
 }

@@ -3,9 +3,9 @@ package cpf.learn.oop.pkg;
 import cpf.learn.oop.pkg.jack.Dog;
 
 /**
- * ����Ϊ�˲��ԣ��ڲ�ͬ�ļ����µ�ͬ���࣬���ⲿ�����µı���.
- * import����һ���࣬����ͬ������Ҫ��ʵ���������ʱ��������ǰ���ϰ�ǰ׺.
- * ��ǰ׺����ʼ��jvm�ɶ�λ���ļ��е���һ���ļ�
+ * 本类为了测试，在不同文件夹下的同名类，在外部引用下的表现.
+ * import其中一个类，其他同名类需要在实例化对象的时候，在类名前加上包前缀.
+ * 包前缀的起始是jvm可定位的文件夹的下一级文件
  */
 public class Quote {
     public static void main(String[] args) {

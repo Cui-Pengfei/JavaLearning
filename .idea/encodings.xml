@@ -2,7 +2,11 @@
 <project version="4">
   <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$/src/cpf/learn/chapter13/string/StringMethods.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/cpf/learn/chapter14/collection_/CollectionIntro.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/cpf/learn/myTool/Array.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/cpf/learn/oop/encapsulation/Account.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/cpf/learn/oop/encapsulation/AccountTest.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/cpf/learn/oop/encapsulation/Person.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/cpf/learn/oop/extend_/ExtendsIntro.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/cpf/learn/oop/extend_/Graduate.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/cpf/learn/oop/extend_/Person.java" charset="UTF-8" />
@@ -12,6 +16,11 @@
     <file url="file://$PROJECT_DIR$/src/cpf/learn/oop/modifier/content/Public.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/cpf/learn/oop/modifier/content/Test.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/cpf/learn/oop/modifier/otherPkg/Test.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/cpf/learn/oop/pkg/DefaultImport.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/cpf/learn/oop/pkg/PkgDetail.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/cpf/learn/oop/pkg/Quote.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/cpf/learn/oop/pkg/jack/Dog.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/cpf/learn/oop/pkg/mary/Dog.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/cpf/learn/template/Template.java" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>

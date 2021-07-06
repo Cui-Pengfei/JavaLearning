@@ -3,15 +3,15 @@ package cpf.learn.oop.encapsulation;
 import java.util.Scanner;
 
 /**
- * ÒªÇó£º
- *      ²»ÄÜËæ±ã²é¿´ÈËµÄÄêÁä,¹¤×ÊµÈÒşË½,²¢¶ÔÉèÖÃµÄÄêÁä½øĞĞºÏÀíµÄÑéÖ¤¡£
- *      ÄêÁäºÏÀí¾ÍÉèÖÃ,·ñÔò¸øÄ¬ÈÏÄêÁä,±ØĞëÔÚ1-120,
- *      ÄêÁä£¬¹¤×Ê²»ÄÜÖ±½Ó²é¿´£¬
- *      nameµÄ³¤¶ÈÔÚ2-6Ö®¼ä
+ * è¦æ±‚ï¼š
+ *      ä¸èƒ½éšä¾¿æŸ¥çœ‹äººçš„å¹´é¾„,å·¥èµ„ç­‰éšç§,å¹¶å¯¹è®¾ç½®çš„å¹´é¾„è¿›è¡Œåˆç†çš„éªŒè¯ã€‚
+ *      å¹´é¾„åˆç†å°±è®¾ç½®,å¦åˆ™ç»™é»˜è®¤å¹´é¾„,å¿…é¡»åœ¨1-120,
+ *      å¹´é¾„ï¼Œå·¥èµ„ä¸èƒ½ç›´æ¥æŸ¥çœ‹ï¼Œ
+ *      nameçš„é•¿åº¦åœ¨2-6ä¹‹é—´
  */
 public class Person {
 
-	//ËÄ¸öË½ÓĞÊôĞÔ£ºĞÕÃû¡¢ÄêÁä¡¢Ö°Î»¡¢¹¤×Ê
+	//å››ä¸ªç§æœ‰å±æ€§ï¼šå§“åã€å¹´é¾„ã€èŒä½ã€å·¥èµ„
 	private String name;
 	private int age;
 	private String position;
@@ -21,12 +21,12 @@ public class Person {
 		Person jack = new Person();
 		jack.setName("jack");
 		jack.setAge(30);
-		jack.setPosition("Ö÷¹Ü");
+		jack.setPosition("ä¸»ç®¡");
 		jack.setSalary(30000);
 		jack.info();
 
-		//×¢Òâ´Ë´¦±ØĞëĞ´12000.0ÒòÎªÊôĞÔÖĞÊÇDouble£¬²»ÄÜ°Ñint¸øDouble,ÒòÎª·â×°ÀàDoubleÖ»ÊµÏÖÁËdoubleµ½Double.
-		Person mary = new Person("mary", 22, "ÊµÏ°Éú", 1200.0);
+		//æ³¨æ„æ­¤å¤„å¿…é¡»å†™12000.0å› ä¸ºå±æ€§ä¸­æ˜¯Doubleï¼Œä¸èƒ½æŠŠintç»™Double,å› ä¸ºå°è£…ç±»Doubleåªå®ç°äº†doubleåˆ°Double.
+		Person mary = new Person("mary", 22, "å®ä¹ ç”Ÿ", 1200.0);
 		mary.info();
 
 
@@ -37,10 +37,10 @@ public class Person {
 	}
 
 	/**
-	 * ¹¹ÔìÆ÷Óëset·½·¨µÄ½áºÏ.
-	 *      ¹¹ÔìÆ÷¿ì½İ¼üalt+insert,ÔÚÑ¡Ôñconstructor.
+	 * æ„é€ å™¨ä¸setæ–¹æ³•çš„ç»“åˆ.
+	 *      æ„é€ å™¨å¿«æ·é”®alt+insert,åœ¨é€‰æ‹©constructor.
 	 *
-	 *  ×ÜÖ®ÈÃÉèÖÃÊôĞÔµÄÓï¾ä¾ùÓÃset\get·½·¨À´ÊµÏÖ£¬¾ÍÒ»¶¨ÄÜÊµÏÖ·â×°.
+	 *  æ€»ä¹‹è®©è®¾ç½®å±æ€§çš„è¯­å¥å‡ç”¨set\getæ–¹æ³•æ¥å®ç°ï¼Œå°±ä¸€å®šèƒ½å®ç°å°è£….
 	 */
 
 	public Person(String name, int age, String position, Double salary) {
@@ -51,12 +51,12 @@ public class Person {
 	}
 
 	/**
-	 * get\set·½·¨¿ì½İ¼ü.
-	 *      1.alt+insert Ñ¡ÔñÒªget\setµÄ·½·¨£¬Ò»¼üÍê³É.
+	 * get\setæ–¹æ³•å¿«æ·é”®.
+	 *      1.alt+insert é€‰æ‹©è¦get\setçš„æ–¹æ³•ï¼Œä¸€é”®å®Œæˆ.
 	 *
-	 *      2.Ò²¿ÉÒÔ°Ñ¹â±ê·ÅÔÚÊôĞÔÉÏ£¬alt+enter¿ÉÒÔ³öÌáÊ¾£¬
-	 *        Ñ¡Ôñ"create getter and setter for field 'name'"£¬
-	 *        Íê³ÉÄ³Ò»ÊôĞÔµÄget\set
+	 *      2.ä¹Ÿå¯ä»¥æŠŠå…‰æ ‡æ”¾åœ¨å±æ€§ä¸Šï¼Œalt+enterå¯ä»¥å‡ºæç¤ºï¼Œ
+	 *        é€‰æ‹©"create getter and setter for field 'name'"ï¼Œ
+	 *        å®ŒæˆæŸä¸€å±æ€§çš„get\set
 	 */
 
 	public String getName() {
@@ -67,8 +67,8 @@ public class Person {
 		if(name.length() >= 2 && name.length() <= 6){
 			this.name = name;
 		}else{
-			System.out.println("ÊäÈëÃû×ÖÓĞÎó£¬Ãû×Ö±ØĞëÊÇ[2,6]¸ö×Ö£¬¸øÄ¬ÈÏÖµ¡°ÎŞÃûÊÏ¡±");
-			this.name = "ÎŞÃûÊÏ";
+			System.out.println("è¾“å…¥åå­—æœ‰è¯¯ï¼Œåå­—å¿…é¡»æ˜¯[2,6]ä¸ªå­—ï¼Œç»™é»˜è®¤å€¼â€œæ— åæ°â€");
+			this.name = "æ— åæ°";
 		}
 	}
 
@@ -80,7 +80,7 @@ public class Person {
 		if (age <= 120 && age >=1){
 			this.age = age;
 		}else{
-			System.out.println("ÄúÉèÖÃµÄÄêÁäÓĞÎó£¬ÄêÁä±ØĞëÔÚ[1,120]·¶Î§ÄÚ£¬¸øÄ¬ÈÏÖµ18Ëê");
+			System.out.println("æ‚¨è®¾ç½®çš„å¹´é¾„æœ‰è¯¯ï¼Œå¹´é¾„å¿…é¡»åœ¨[1,120]èŒƒå›´å†…ï¼Œç»™é»˜è®¤å€¼18å²");
 			this.age = 18;
 		}
 
@@ -95,13 +95,13 @@ public class Person {
 	}
 
 	public Double getSalary() {
-		System.out.print("ÇëÊäÈë²é¿´Ğ½Ë®ÃÜÂë£º");
+		System.out.print("è¯·è¾“å…¥æŸ¥çœ‹è–ªæ°´å¯†ç ï¼š");
 		Scanner scanner = new Scanner(System.in);
 		String pwd = scanner.next();
 		if(pwd.equals("1996818110")){
 			return salary;
 		}else{
-			System.out.println("ÄúÊäÈëµÄÃÜÂëÓĞÎó...");
+			System.out.println("æ‚¨è¾“å…¥çš„å¯†ç æœ‰è¯¯...");
 			return null;
 		}
 
@@ -112,11 +112,11 @@ public class Person {
 	}
 
 	public void info(){
-		System.out.println("ĞÅÏ¢ÈçÏÂ£º");
-		System.out.println("ĞÕÃû£º" + name);
-		System.out.println("ÄêÁä£º" + age);
-		System.out.println("Ö°Î»£º" + position);
-		System.out.println("Ğ½Ë®£º" + getSalary());
+		System.out.println("ä¿¡æ¯å¦‚ä¸‹ï¼š");
+		System.out.println("å§“åï¼š" + name);
+		System.out.println("å¹´é¾„ï¼š" + age);
+		System.out.println("èŒä½ï¼š" + position);
+		System.out.println("è–ªæ°´ï¼š" + getSalary());
 	}
 
 

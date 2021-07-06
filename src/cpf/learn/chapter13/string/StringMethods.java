@@ -120,7 +120,7 @@ public class StringMethods{
 
 		/*10. format()方法 实现像C语言那样的格式化输出*/
 		String name = "cpf";
-		char gender = '男';
+		char gender = 'm';
 		double score = 99.99999;
 		System.out.println("name = " + name + " gender = " + gender + " score = " + score);
 		//如果另一个地方也想要这样的格式，那只能是把这个复制过去，再写一遍咯，增加了程序员负担

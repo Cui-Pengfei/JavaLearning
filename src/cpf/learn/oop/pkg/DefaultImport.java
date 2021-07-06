@@ -1,9 +1,9 @@
 package cpf.learn.oop.pkg;
 
-//Ä¬ÈÏÒıÈëµÄ°ü
-//½¨ÒéĞèÒªÊ²Ã´Àà¾ÍÒıÈëÊ²Ã´Àà£¬²»½¨ÒéÓÃ.*À´ÒıÓÃ
+//é»˜è®¤å¼•å…¥çš„åŒ…
+//å»ºè®®éœ€è¦ä»€ä¹ˆç±»å°±å¼•å…¥ä»€ä¹ˆç±»ï¼Œä¸å»ºè®®ç”¨.*æ¥å¼•ç”¨
 // import  java.lang.*;
-// import java.lang.Math;//Õâ¸ö¾Í²»ÓÃµ¼Èë¾Í¿ÉÒÔÓÃ£¬Ä¬ÈÏÊÇµ¼ÈëµÄ
+// import java.lang.Math;//è¿™ä¸ªå°±ä¸ç”¨å¯¼å…¥å°±å¯ä»¥ç”¨ï¼Œé»˜è®¤æ˜¯å¯¼å…¥çš„
 
 
 import cpf.learn.myTool.Array;
@@ -12,15 +12,15 @@ import java.util.Arrays;
 
 public class DefaultImport {
 	public static void main(String[] args) {
-		//Ä¬ÈÏµÄµ¼Èë°üÊ¹µÃÕâÌõ³ÌĞòºÏ·¨
+		//é»˜è®¤çš„å¯¼å…¥åŒ…ä½¿å¾—è¿™æ¡ç¨‹åºåˆæ³•
 		double ran = Math.random();
 
-		//	Ê¹ÓÃÏµÍ³Ìá¹©µÄ Arrays Íê³ÉÊı×éÅÅĞò
+		//	ä½¿ç”¨ç³»ç»Ÿæä¾›çš„ Arrays å®Œæˆæ•°ç»„æ’åº
 		int[] array = {1, 2, 7, 4, 5, 9, 12, 66, 31};
-		System.out.print("ÅÅĞòÇ°£º");
+		System.out.print("æ’åºå‰ï¼š");
 		Array.printArray(array);
-		Arrays.sort(array);//ctrl + t ¿É²é¿´ArraysÌá¹©µÄ¶àÖÖÅÅĞò·½·¨
-		System.out.print("ÅÅĞòºó£º");
+		Arrays.sort(array);//ctrl + t å¯æŸ¥çœ‹Arraysæä¾›çš„å¤šç§æ’åºæ–¹æ³•
+		System.out.print("æ’åºåï¼š");
 		Array.printArray(array);
 
 

@@ -14,7 +14,8 @@ import java.io.FileNotFoundException;
  *   若父类没有显式地抛出异常，则隐含着throws Exception，子类便可随心所欲
  * 4.对于编译时异常，只要抛出就必须得到解决，不然无法编译通过
  *   对于运行时异常，在编译时不会有任何编译错误提示，直到运行时，才会发现有运行时异常，
- *   这时候默认的throws就发挥了作用，这也是为什么要默认的throws
+ *   这时候默认的throws就发挥了作用，这也是为什么要有一个默认地throws机制
+ * 5.对于本地不清楚到底是编译异常还是运行异常的代码块，必须在方法体显示地抛出异常
  */
 public class ThrowsDetail{
 	public static void main(String[] args){//默认抛出程序，处理了f1中存在的运行时异常

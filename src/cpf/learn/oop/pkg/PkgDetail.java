@@ -1,8 +1,8 @@
-//packageÓï¾ä±ØĞëÊÇµÚÒ»ÌõÓï¾ä
+//packageè¯­å¥å¿…é¡»æ˜¯ç¬¬ä¸€æ¡è¯­å¥
 package cpf.learn.oop.pkg;
-//Ò»¸öÀàÖĞ×î¶àÖ»ÄÜÓĞÒ»ÌõpackageÓï¾ä
+//ä¸€ä¸ªç±»ä¸­æœ€å¤šåªèƒ½æœ‰ä¸€æ¡packageè¯­å¥
 
-//importÖ¸Áî·ÅÔÚpackageÖ¸ÁîÖ®ÏÂ£¬ÔÚÀà¶¨ÒåÖ®Ç°£¬¿ÉÒÔÓĞ¶à¾ä£¬ÇÒÃ»ÓĞË³ĞòÒªÇó
+//importæŒ‡ä»¤æ”¾åœ¨packageæŒ‡ä»¤ä¹‹ä¸‹ï¼Œåœ¨ç±»å®šä¹‰ä¹‹å‰ï¼Œå¯ä»¥æœ‰å¤šå¥ï¼Œä¸”æ²¡æœ‰é¡ºåºè¦æ±‚
 
 import cpf.learn.myTool.Array;
 
@@ -10,7 +10,7 @@ import java.util.Arrays;
 
 public class PkgDetail {
 	public static void main(String[] args) {
-		//Êı×éÅÅĞò²¢Êä³ö
+		//æ•°ç»„æ’åºå¹¶è¾“å‡º
 		int[] array = new int[]{1, 5, 6, 9, 3, 5, 4};
 		Arrays.sort(array);
 		Array.printArray(array);

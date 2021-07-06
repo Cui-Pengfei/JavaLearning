@@ -10,7 +10,7 @@ public class AccountTest{
 		someone.setName("mary");
 		someone.setBalance(1234);
 		someone.setPwd("666666");
-		System.out.println("\n修改后信息如下：");
+		System.out.println("\n淇敼鍚庝俊鎭涓嬶細");
 		someone.info();
 	}//end main
 }//end class

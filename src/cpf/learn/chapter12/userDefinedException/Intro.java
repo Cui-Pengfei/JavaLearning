@@ -27,6 +27,7 @@ public class Intro{
 			System.out.println("您输入的数在范围内");
 		}
 	}//end main
+
 }
 
 class AgeException extends RuntimeException{

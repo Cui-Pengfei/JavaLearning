@@ -1,4 +1,4 @@
-package cpf.singleModel;
+package cpf.model.singleModel;
 
 /**
  * 设计模式一：单例模式

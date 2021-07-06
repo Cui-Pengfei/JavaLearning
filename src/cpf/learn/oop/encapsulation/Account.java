@@ -3,42 +3,42 @@ package cpf.learn.oop.encapsulation;
 import java.util.Scanner;
 
 /**
- * 1.ÊôĞÔ£º
- *      ĞÕÃû£º2¡¢3¡¢4Î»
- *      Óà¶î£º±ØĞë > 20
- *      ÃÜÂë£º±ØĞëÊÇ6Î»
- *      Èç¹û²»Âú×ã£¬Ôò¸ø³öÌáÊ¾ĞÅÏ¢£¬²¢¸øÄ¬ÈÏÖµ£¨³ÌĞòÔ±×Ô¼º¶¨£©
- * 2.Í¨¹ıset¸øAccountµÄÊôĞÔ¸³Öµ
- * 3.ÔÚAccountTestÖĞ²âÊÔ
+ * 1.å±æ€§ï¼š
+ *      å§“åï¼š2ã€3ã€4ä½
+ *      ä½™é¢ï¼šå¿…é¡» > 20
+ *      å¯†ç ï¼šå¿…é¡»æ˜¯6ä½
+ *      å¦‚æœä¸æ»¡è¶³ï¼Œåˆ™ç»™å‡ºæç¤ºä¿¡æ¯ï¼Œå¹¶ç»™é»˜è®¤å€¼ï¼ˆç¨‹åºå‘˜è‡ªå·±å®šï¼‰
+ * 2.é€šè¿‡setç»™Accountçš„å±æ€§èµ‹å€¼
+ * 3.åœ¨AccountTestä¸­æµ‹è¯•
  */
 public class Account {
 
-	//ĞÕÃû¡¢Óà¶î¡¢ÃÜÂë
+	//å§“åã€ä½™é¢ã€å¯†ç 
 	private String name;
 	private double balance;
-	private String pwd = "123456";//Ô­Ê¼ÃÜÂë
+	private String pwd = "123456";//åŸå§‹å¯†ç 
 
-	//ĞÅÏ¢Õ¹Ê¾º¯Êı
+	//ä¿¡æ¯å±•ç¤ºå‡½æ•°
 	public void info(){
-		System.out.print("Õ¹Ê¾ĞÅÏ¢ĞèÒªÊäÈëÄúµÄÃÜÂë£º");
+		System.out.print("å±•ç¤ºä¿¡æ¯éœ€è¦è¾“å…¥æ‚¨çš„å¯†ç ï¼š");
 		Scanner scanner = new Scanner(System.in);
 		String myPsw = scanner.next();
 		if(myPsw.equals(pwd)){
-			System.out.println(name + "µÄĞÅÏ¢ÈçÏÂ£º");
-			System.out.println("ĞÕÃû£º" + getName());
-			System.out.println("Óà¶î£º" + getBalance());
-			System.out.println("ÃÜÂë£º" + getPwd());
+			System.out.println(name + "çš„ä¿¡æ¯å¦‚ä¸‹ï¼š");
+			System.out.println("å§“åï¼š" + getName());
+			System.out.println("ä½™é¢ï¼š" + getBalance());
+			System.out.println("å¯†ç ï¼š" + getPwd());
 		}else{
-			System.out.println("ÊäÈëÃæÓĞÎó£¬¾Ü¾øĞÅÏ¢Õ¹Ê¾...");
+			System.out.println("è¾“å…¥é¢æœ‰è¯¯ï¼Œæ‹’ç»ä¿¡æ¯å±•ç¤º...");
 		}
 
 
 
 	}
 
-	//¹¹ÔìÆ÷£¬ĞèÒªÓĞÄ¬ÈÏÖµ
-	public Account(){//ĞÂ½¨Ê±¸³Ä¬ÈÏÖµ
-		setName("ÎŞÃûÊÏ");
+	//æ„é€ å™¨ï¼Œéœ€è¦æœ‰é»˜è®¤å€¼
+	public Account(){//æ–°å»ºæ—¶èµ‹é»˜è®¤å€¼
+		setName("æ— åæ°");
 	}
 
 	public Account(String name, double balance, String pwd){
@@ -47,7 +47,7 @@ public class Account {
 		setPwd(pwd);
 	}
 
-	//ÒÔÏÂÊÇget\set·½·¨
+	//ä»¥ä¸‹æ˜¯get\setæ–¹æ³•
 	public String getName(){
 
 		return name;
@@ -57,8 +57,8 @@ public class Account {
 		if(name.length() == 2 || name.length() == 3 || name.length() == 4){
 			this.name = name;
 		}else{
-			System.out.println("ÄúÊäÈëµÄĞÕÃû²»ºÏ·¨£¬Ãû×Ö±ØĞëÊÇ2¡¢3¡¢4¸ö×Ö·û£¬¸ø¶¨Ä¬ÈÏÖµ¡°ÎŞÃûÊÏ¡±");
-			this.name = "ÎŞÃûÊÏ";
+			System.out.println("æ‚¨è¾“å…¥çš„å§“åä¸åˆæ³•ï¼Œåå­—å¿…é¡»æ˜¯2ã€3ã€4ä¸ªå­—ç¬¦ï¼Œç»™å®šé»˜è®¤å€¼â€œæ— åæ°â€");
+			this.name = "æ— åæ°";
 		}
 	}
 
@@ -70,7 +70,7 @@ public class Account {
 		if(balance >= 20){
 			this.balance = balance;
 		}else{
-			System.out.println("Óà¶îÊäÈëÓĞÎó£¬Óà¶î±ØĞë>=20...¸ø¶¨Ä¬ÈÏÓà¶î0.0");
+			System.out.println("ä½™é¢è¾“å…¥æœ‰è¯¯ï¼Œä½™é¢å¿…é¡»>=20...ç»™å®šé»˜è®¤ä½™é¢0.0");
 			this.balance = 0;
 		}
 	}
@@ -81,16 +81,16 @@ public class Account {
 
 	public void setPwd(String pwd) {
 		if(pwd.length() == 6){
-			System.out.print("ÇëÊäÈë¾ÉÃÜÂë(Î´ĞŞ¸Ä¹ı¾ÍÊäÈëÔ­Ê¼ÃÜÂë)£º");
+			System.out.print("è¯·è¾“å…¥æ—§å¯†ç (æœªä¿®æ”¹è¿‡å°±è¾“å…¥åŸå§‹å¯†ç )ï¼š");
 			Scanner scanner = new Scanner(System.in);
 			String myPwd = scanner.next();
-			if(myPwd.equals(this.pwd)){//Õâ¾ÍĞèÒªÓĞÒ»¸öÄ¬ÈÏµÄÔ­Ê¼ÃÜÂë
+			if(myPwd.equals(this.pwd)){//è¿™å°±éœ€è¦æœ‰ä¸€ä¸ªé»˜è®¤çš„åŸå§‹å¯†ç 
 				this.pwd = pwd;
 			}else{
-				System.out.println("ÄúÊäÈëµÄÃÜÂëÓĞÎó£¬ĞŞ¸ÄÊ§°Ü£¡");
+				System.out.println("æ‚¨è¾“å…¥çš„å¯†ç æœ‰è¯¯ï¼Œä¿®æ”¹å¤±è´¥ï¼");
 			}
 		}else{
-			System.out.println("ÃÜÂëÉèÖÃÊ§°Ü£¬ÃÜÂë³¤¶ÈÓĞÎó£¬±ØĞëÊÇ6Î»ÃÜÂë...");
+			System.out.println("å¯†ç è®¾ç½®å¤±è´¥ï¼Œå¯†ç é•¿åº¦æœ‰è¯¯ï¼Œå¿…é¡»æ˜¯6ä½å¯†ç ...");
 		}
 	}
 }//end class
