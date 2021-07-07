@@ -1,4 +1,4 @@
-package cpf.learn;
+package cpf.learn.test;
 
 public class CodeEncoding{
 	public static void main(String[] args){
