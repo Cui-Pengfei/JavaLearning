@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>java.io.FileReader</OriginalElement>
+  <nodes>
+    <node x="272.55555555555554" y="168.0">java.nio.charset.Charset</node>
+    <node x="53.90972222222223" y="84.0">java.io.Closeable</node>
+    <node x="563.2291666666667" y="84.0">java.lang.Readable</node>
+    <node x="34.90972222222223" y="168.0">java.io.Writer</node>
+    <node x="93.0" y="376.0">java.io.FileWriter</node>
+    <node x="20.0" y="282.0">java.io.OutputStreamWriter</node>
+    <node x="546.7291666666667" y="168.0">java.io.Reader</node>
+    <node x="554.0" y="376.0">java.io.FileReader</node>
+    <node x="34.90972222222223" y="0.0">java.lang.AutoCloseable</node>
+    <node x="487.0" y="282.0">java.io.InputStreamReader</node>
+    <node x="256.0" y="282.0">sun.nio.cs.ext.GBK</node>
+    <node x="352.0" y="282.0">sun.nio.cs.UTF_8</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="java.nio.charset.Charset" target="java.nio.charset.Charset">
+      <point x="-28.5" y="17.0" />
+      <point x="301.05555555555554" y="232.0" />
+      <point x="242.55555555555554" y="232.0" />
+      <point x="242.55555555555554" y="176.5" />
+      <point x="-57.0" y="-8.5" />
+    </edge>
+    <edge source="java.io.InputStreamReader" target="java.nio.charset.Charset">
+      <point x="-69.0" y="-17.0" />
+      <point x="521.5" y="252.0" />
+      <point x="377.05555555555554" y="252.0" />
+      <point x="47.5" y="17.0" />
+    </edge>
+    <edge source="java.io.Reader" target="java.io.Reader">
+      <point x="-34.66666666666666" y="17.0" />
+      <point x="564.0625" y="222.0" />
+      <point x="526.7291666666667" y="222.0" />
+      <point x="526.7291666666667" y="185.0" />
+      <point x="-52.0" y="-0.0" />
+    </edge>
+    <edge source="java.io.OutputStreamWriter" target="java.io.OutputStreamWriter">
+      <point x="-72.0" y="17.0" />
+      <point x="56.0" y="336.0" />
+      <point x="0.0" y="336.0" />
+      <point x="0.0" y="299.0" />
+      <point x="-108.0" y="-0.0" />
+    </edge>
+    <edge source="java.io.Reader" target="java.io.Closeable">
+      <point x="-26.0" y="-17.0" />
+      <point x="572.7291666666667" y="143.0" />
+      <point x="152.90972222222223" y="143.0" />
+      <point x="33.0" y="17.0" />
+    </edge>
+    <edge source="java.io.Reader" target="java.lang.Readable">
+      <point x="26.0" y="-17.0" />
+      <point x="0.0" y="17.0" />
+    </edge>
+    <edge source="java.io.OutputStreamWriter" target="java.io.Writer">
+      <point x="0.0" y="-17.0" />
+      <point x="128.0" y="262.0" />
+      <point x="121.57638888888886" y="262.0" />
+      <point x="34.66666666666663" y="17.0" />
+    </edge>
+    <edge source="java.io.FileReader" target="java.io.InputStreamReader">
+      <point x="35.5" y="-17.0" />
+      <point x="660.5" y="356.0" />
+      <point x="659.5" y="356.0" />
+      <point x="69.0" y="17.0" />
+    </edge>
+    <edge source="java.io.Writer" target="java.io.Writer">
+      <point x="-34.666666666666686" y="17.0" />
+      <point x="52.24305555555554" y="222.0" />
+      <point x="14.909722222222229" y="222.0" />
+      <point x="14.909722222222229" y="185.0" />
+      <point x="-52.0" y="-0.0" />
+    </edge>
+    <edge source="sun.nio.cs.ext.GBK" target="java.nio.charset.Charset">
+      <point x="0.0" y="-17.0" />
+      <point x="294.0" y="262.0" />
+      <point x="339.05555555555554" y="262.0" />
+      <point x="9.5" y="17.0" />
+    </edge>
+    <edge source="java.io.Writer" target="java.io.Closeable">
+      <point x="0.0" y="-17.0" />
+      <point x="-33.0" y="17.0" />
+    </edge>
+    <edge source="java.io.FileWriter" target="java.io.OutputStreamWriter">
+      <point x="-35.5" y="-17.0" />
+      <point x="0.0" y="17.0" />
+    </edge>
+    <edge source="java.io.OutputStreamWriter" target="java.nio.charset.Charset">
+      <point x="72.0" y="-17.0" />
+      <point x="200.0" y="252.0" />
+      <point x="320.05555555555554" y="252.0" />
+      <point x="-9.5" y="17.0" />
+    </edge>
+    <edge source="java.io.Closeable" target="java.lang.AutoCloseable">
+      <point x="0.0" y="-17.0" />
+      <point x="0.0" y="17.0" />
+    </edge>
+    <edge source="java.io.InputStreamReader" target="java.io.Reader">
+      <point x="69.0" y="-17.0" />
+      <point x="659.5" y="262.0" />
+      <point x="633.3958333333333" y="262.0" />
+      <point x="34.66666666666666" y="17.0" />
+    </edge>
+    <edge source="sun.nio.cs.UTF_8" target="java.nio.charset.Charset">
+      <point x="0.0" y="-17.0" />
+      <point x="399.5" y="262.0" />
+      <point x="358.05555555555554" y="262.0" />
+      <point x="28.5" y="17.0" />
+    </edge>
+    <edge source="java.io.InputStreamReader" target="java.io.InputStreamReader">
+      <point x="-69.0" y="17.0" />
+      <point x="521.5" y="336.0" />
+      <point x="467.0" y="336.0" />
+      <point x="467.0" y="299.0" />
+      <point x="-103.5" y="-0.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="348.0" y="205.0" />
+  <SelectedNodes>
+    <node>sun.nio.cs.UTF_8</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

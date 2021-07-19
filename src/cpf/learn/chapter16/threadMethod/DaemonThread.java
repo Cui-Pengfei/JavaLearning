@@ -5,7 +5,7 @@ package cpf.learn.chapter16.threadMethod;
  * @version 1.0
  * 守护线程：Daemon Thread 为用户线程服务的线程；
  * 用户线程：User Thread 一般工作的线程
- * 规则：当且仅当没有与任何一个User Thread的时候，Daemon Thread才会全部结束；
+ * 规则：当且仅当没有与任何一个 User Thread的时候，Daemon Thread才会全部结束；
  * 案例：GC时最典型的守护进程
  * 例子：把子线程设置为守护线程--->
  */

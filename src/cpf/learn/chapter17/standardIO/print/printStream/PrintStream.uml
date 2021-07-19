@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>java.io.PrintStream</OriginalElement>
+  <nodes>
+    <node x="177.5" y="336.0">java.io.PrintStream</node>
+    <node x="28.0" y="168.0">java.io.OutputStream</node>
+    <node x="263.5" y="252.0">java.lang.Appendable</node>
+    <node x="154.0" y="84.0">java.io.Closeable</node>
+    <node x="0.0" y="252.0">java.io.FilterOutputStream</node>
+    <node x="135.0" y="0.0">java.lang.AutoCloseable</node>
+    <node x="2.0" y="84.0">java.io.Flushable</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="java.io.FilterOutputStream" target="java.io.OutputStream">
+      <point x="0.0" y="-17.0" />
+      <point x="0.0" y="17.0" />
+    </edge>
+    <edge source="java.io.PrintStream" target="java.io.Closeable">
+      <point x="0.0" y="-17.0" />
+      <point x="33.0" y="17.0" />
+    </edge>
+    <edge source="java.io.OutputStream" target="java.io.Closeable">
+      <point x="40.0" y="-17.0" />
+      <point x="148.0" y="143.0" />
+      <point x="187.0" y="143.0" />
+      <point x="-33.0" y="17.0" />
+    </edge>
+    <edge source="java.io.PrintStream" target="java.lang.Appendable">
+      <point x="50.333333333333314" y="-17.0" />
+      <point x="303.3333333333333" y="311.0" />
+      <point x="334.5" y="311.0" />
+      <point x="0.0" y="17.0" />
+    </edge>
+    <edge source="java.io.PrintStream" target="java.io.FilterOutputStream">
+      <point x="-50.33333333333334" y="-17.0" />
+      <point x="202.66666666666666" y="311.0" />
+      <point x="108.0" y="311.0" />
+      <point x="0.0" y="17.0" />
+    </edge>
+    <edge source="java.io.Closeable" target="java.lang.AutoCloseable">
+      <point x="0.0" y="-17.0" />
+      <point x="0.0" y="17.0" />
+    </edge>
+    <edge source="java.io.OutputStream" target="java.io.Flushable">
+      <point x="-40.0" y="-17.0" />
+      <point x="0.0" y="17.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="203.0" y="185.0" />
+  <SelectedNodes>
+    <node>java.io.PrintStream</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

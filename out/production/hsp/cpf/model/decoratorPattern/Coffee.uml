@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>cpf.model.decoratorPattern.Coffee</OriginalElement>
+  <nodes>
+    <node x="283.25" y="251.0">cpf.model.decoratorPattern.OriginalCoffee</node>
+    <node x="162.75" y="0.0">cpf.model.decoratorPattern.Coffee</node>
+    <node x="86.25" y="240.0">cpf.model.decoratorPattern.Decorator</node>
+    <node x="183.0" y="370.0">cpf.model.decoratorPattern.AddSugar</node>
+    <node x="0.0" y="370.0">cpf.model.decoratorPattern.AddMilk</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="cpf.model.decoratorPattern.AddMilk" target="cpf.model.decoratorPattern.Decorator">
+      <point x="0.0" y="-29.0" />
+      <point x="81.5" y="345.0" />
+      <point x="130.5" y="345.0" />
+      <point x="-44.25" y="40.0" />
+    </edge>
+    <edge source="cpf.model.decoratorPattern.AddSugar" target="cpf.model.decoratorPattern.Decorator">
+      <point x="0.0" y="-29.0" />
+      <point x="268.0" y="345.0" />
+      <point x="219.0" y="345.0" />
+      <point x="44.25" y="40.0" />
+    </edge>
+    <edge source="cpf.model.decoratorPattern.OriginalCoffee" target="cpf.model.decoratorPattern.Coffee">
+      <point x="0.0" y="-29.0" />
+      <point x="372.75" y="215.0" />
+      <point x="329.25" y="215.0" />
+      <point x="55.5" y="95.0" />
+    </edge>
+    <edge source="cpf.model.decoratorPattern.Decorator" target="cpf.model.decoratorPattern.Coffee">
+      <point x="0.0" y="-40.0" />
+      <point x="174.75" y="215.0" />
+      <point x="218.25" y="215.0" />
+      <point x="-55.5" y="95.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="196.0" y="109.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Methods</Category>
+    <Category>Constructors</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

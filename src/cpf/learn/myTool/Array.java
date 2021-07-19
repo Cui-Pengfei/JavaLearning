@@ -1,22 +1,22 @@
 package cpf.learn.myTool;
 
 /**
- * Êı×éµÄ³õ²½ÈÏÊ¶
+ * æ•°ç»„çš„åˆæ­¥è®¤è¯†
  */
 @SuppressWarnings({"all"})
 public class Array{
 	public static void main(String[] args) {
 		/**
-		 * 	°¸ÀıÒıÈë£ºÇó¶àÖ»Ä¸¼¦µÄÆ½¾ùÌåÖØ
+		 * 	æ¡ˆä¾‹å¼•å…¥ï¼šæ±‚å¤šåªæ¯é¸¡çš„å¹³å‡ä½“é‡
 		 *
 		 */
 
-		// ÕâÊÇÖ±½Ó³õÊ¼»¯£¬ÒÑ¾­ÖªµÀ7Ö»¼¦µÄÌåÖØÁË
+		// è¿™æ˜¯ç›´æ¥åˆå§‹åŒ–ï¼Œå·²ç»çŸ¥é“7åªé¸¡çš„ä½“é‡äº†
 		// double hens[] = {1.1, 2.2, 3.3, 4.4, 5.5, 6.6, 7.7};
 		// double[] hens = {1.1, 2.2, 3.3, 4.4, 5.5, 6.6, 7.7};
 
-		// ¼ÙÈçÖ»ÖªµÀÓĞ7Ö»¼¦£¬ÔİÊ±²»ÖªµÀÌåÖØ£¬¾Í»»ÖÖ·½Ê½
-		// double hens[] = new double[7];//¶¨ÒåÒ»¸ö³¤¶ÈÎª7µÄdoubleĞÍÊı×é
+		// å‡å¦‚åªçŸ¥é“æœ‰7åªé¸¡ï¼Œæš‚æ—¶ä¸çŸ¥é“ä½“é‡ï¼Œå°±æ¢ç§æ–¹å¼
+		// double hens[] = new double[7];//å®šä¹‰ä¸€ä¸ªé•¿åº¦ä¸º7çš„doubleå‹æ•°ç»„
 
 		// for(int index = 0; index < 7; index++){
 		// 	hens[index] = 1.1 * (index + 1);
@@ -29,14 +29,14 @@ public class Array{
 
 
 		/**
-		 * Ê¹ÓÃ·½Ê½2£º¶¯Ì¬³õÊ¼»¯
+		 * ä½¿ç”¨æ–¹å¼2ï¼šåŠ¨æ€åˆå§‹åŒ–
 		 */
-		// 1.ÏÈÉùÃ÷Êı×é£¬ÏÈ²»·ÖÅä¿Õ¼ä
+		// 1.å…ˆå£°æ˜æ•°ç»„ï¼Œå…ˆä¸åˆ†é…ç©ºé—´
 		// double hens[];
-		double[] hens;//ÕâÁ½ÖÖ¶¼ÊÇÔÊĞíµÄ
+		double[] hens;//è¿™ä¸¤ç§éƒ½æ˜¯å…è®¸çš„
 
-		// 2.´´½¨Êı×é
-		hens = new double[7];//×¢ÒâÊÇ£º Êı×éÃû = new Êı¾İÀàĞÍ[´óĞ¡]
+		// 2.åˆ›å»ºæ•°ç»„
+		hens = new double[7];//æ³¨æ„æ˜¯ï¼š æ•°ç»„å = new æ•°æ®ç±»å‹[å¤§å°]
 
 		for (int index = 0; index < 7; index++) {
 			hens[index] = 1.1 * (index + 1);
@@ -48,23 +48,23 @@ public class Array{
 
 	}
 
-/*************************´Ë´¦main·½·¨½áÊø**************************************/
+/*************************æ­¤å¤„mainæ–¹æ³•ç»“æŸ**************************************/
 
 	/**
-	 * ¼ì²âÒ»¸öÊı×éÊÇ·ñÓĞĞò.
+	 * æ£€æµ‹ä¸€ä¸ªæ•°ç»„æ˜¯å¦æœ‰åº.
 	 *
-	 * @param array ´ı¼ì²âµÄÊı×é
-	 * @return ·µ»Øtrue±íÊ¾ÊÇÓĞĞòÊı×é£¬false±íÊ¾ÊÇÎŞĞòÊı×é
+	 * @param array å¾…æ£€æµ‹çš„æ•°ç»„
+	 * @return è¿”å›trueè¡¨ç¤ºæ˜¯æœ‰åºæ•°ç»„ï¼Œfalseè¡¨ç¤ºæ˜¯æ— åºæ•°ç»„
 	 */
 	public static boolean isArrayOrdered(int[] array) {
 		for (int index = 0; index < array.length - 1; index++) {
-			if (array[0] <= array[array.length - 1]) {//ËµÃ÷ÊÇÉıĞò»òÕßÈ«ÏàµÈµÄÊı×é
+			if (array[0] <= array[array.length - 1]) {//è¯´æ˜æ˜¯å‡åºæˆ–è€…å…¨ç›¸ç­‰çš„æ•°ç»„
 
-				if (array[index] > array[index + 1]) {//ÉıĞòÖĞ³öÏÖ½µĞò£¬ËµÃ÷ÊÇÂÒĞò
+				if (array[index] > array[index + 1]) {//å‡åºä¸­å‡ºç°é™åºï¼Œè¯´æ˜æ˜¯ä¹±åº
 					return false;
 				}
-			} else {//ËµÃ÷ÊÇ½µĞò
-				if (array[index] < array[index + 1]) {//½µĞòÖĞ³öÏÖÉıĞò£¬ËµÃ÷ÊÇÂÒĞò
+			} else {//è¯´æ˜æ˜¯é™åº
+				if (array[index] < array[index + 1]) {//é™åºä¸­å‡ºç°å‡åºï¼Œè¯´æ˜æ˜¯ä¹±åº
 					return false;
 				}
 			}
@@ -74,76 +74,76 @@ public class Array{
 
 
 	/**
-	 * Éú³ÉÒ»¸ö×°ÂúËæ»úÕıÕûÊıµÄÊı×é.
+	 * ç”Ÿæˆä¸€ä¸ªè£…æ»¡éšæœºæ­£æ•´æ•°çš„æ•°ç»„.
 	 *
-	 * @param amount Ëæ»úÊıµÄÊıÁ¿
-	 * @param range  Ëæ»úÊıµÄ·¶Î§
-	 * @return ×°ÂúËæ»úÊıµÄÊı×é
+	 * @param amount éšæœºæ•°çš„æ•°é‡
+	 * @param range  éšæœºæ•°çš„èŒƒå›´
+	 * @return è£…æ»¡éšæœºæ•°çš„æ•°ç»„
 	 */
 
 	public static int[] randomArray(int amount, int range) {
-		//ÏÈÀ´¸öËæ»úÊıĞ´ÈëÊı×é£¬ÃâµÃÎÒÊäÈëÂé·³
+		//å…ˆæ¥ä¸ªéšæœºæ•°å†™å…¥æ•°ç»„ï¼Œå…å¾—æˆ‘è¾“å…¥éº»çƒ¦
 		int[] group = new int[amount];
 		for (int index = 0; index < group.length; index++) {
-			group[index] = (int) (Math.random() * range + 1);//Ëæ»úÊı·¶Î§
-			// group[index] = index;//¼ÙÈçÊÇÓĞĞòµÄÊı¾İ
+			group[index] = (int) (Math.random() * range + 1);//éšæœºæ•°èŒƒå›´
+			// group[index] = index;//å‡å¦‚æ˜¯æœ‰åºçš„æ•°æ®
 		}
-		return group;//·µ»ØÕâ¸öÂúÔØËæ»úÊıµÄÊı×é
+		return group;//è¿”å›è¿™ä¸ªæ»¡è½½éšæœºæ•°çš„æ•°ç»„
 	}
 
 	public static Integer[] randomArray(int amount, int range, boolean isInteger) {
-		//ÏÈÀ´¸öËæ»úÊıĞ´ÈëÊı×é£¬ÃâµÃÎÒÊäÈëÂé·³
+		//å…ˆæ¥ä¸ªéšæœºæ•°å†™å…¥æ•°ç»„ï¼Œå…å¾—æˆ‘è¾“å…¥éº»çƒ¦
 		Integer[] group = new Integer[amount];
 		for (int index = 0; index < group.length; index++) {
-			group[index] = (int) (Math.random() * range + 1);//Ëæ»úÊı·¶Î§
-			// group[index] = index;//¼ÙÈçÊÇÓĞĞòµÄÊı¾İ
+			group[index] = (int) (Math.random() * range + 1);//éšæœºæ•°èŒƒå›´
+			// group[index] = index;//å‡å¦‚æ˜¯æœ‰åºçš„æ•°æ®
 		}
-		return group;//·µ»ØÕâ¸öÂúÔØËæ»úÊıµÄÊı×é
+		return group;//è¿”å›è¿™ä¸ªæ»¡è½½éšæœºæ•°çš„æ•°ç»„
 	}
 
 	public static void printArray(int[] array) {
 		for (int index = 0; index < array.length; index++) {
 			System.out.print(array[index] + "\t");
 		}
-		System.out.println();//»»ĞĞ
+		System.out.println();//æ¢è¡Œ
 	}
 
 	/**
-	 * Êä³öÊı×éÔªËØ
+	 * è¾“å‡ºæ•°ç»„å…ƒç´ 
 	 *
-	 * @param array ÒªÊä³öµÄÊı×é
-	 * @param begin Êä³öÆğµã
-	 * @param end   Êä³öÖÕµã
+	 * @param array è¦è¾“å‡ºçš„æ•°ç»„
+	 * @param begin è¾“å‡ºèµ·ç‚¹
+	 * @param end   è¾“å‡ºç»ˆç‚¹
 	 */
 	public static void printArray(int[] array, int begin, int end) {
 
 		if (begin < 0 || end > array.length || begin > end) {
-			System.out.println("printArray²ÎÊıÓĞÎó");
+			System.out.println("printArrayå‚æ•°æœ‰è¯¯");
 		} else {
 			for (int index = begin; index < end; index++) {
 				System.out.print(array[index] + " ");
 			}
 		}
-		System.out.println();//»»ĞĞ
+		System.out.println();//æ¢è¡Œ
 	}
 
 	public static void printArray(double[] array, int begin, int end) {
 
 		if (begin < 0 || end > array.length || begin > end) {
-			System.out.println("printArray²ÎÊıÓĞÎó");
+			System.out.println("printArrayå‚æ•°æœ‰è¯¯");
 		} else {
 			for (int index = begin; index < end; index++) {
 				System.out.print(array[index] + " ");
 			}
 		}
-		System.out.println();//»»ĞĞ
+		System.out.println();//æ¢è¡Œ
 	}
 
 
 	/**
-	 * Êä³ö¶şÎ¬Êı×éµÄÖµ.
+	 * è¾“å‡ºäºŒç»´æ•°ç»„çš„å€¼.
 	 *
-	 * @param tda ¶şÎ¬Êı×éµÄÒıÓÃ
+	 * @param tda äºŒç»´æ•°ç»„çš„å¼•ç”¨
 	 */
 	public static void printArray(int[][] tda) {
 		for (int outer = 0; outer < tda.length; outer++) {
@@ -156,26 +156,26 @@ public class Array{
 
 
 	/**
-	 * Êı×éÔö¼ÓÒ»¸öÈİÁ¿.
-	 * ÍùÖ¸¶¨Êı×éarrayÎ²¶Ë²åÈëÒ»¸öÖµÎªvalueµÄÊı¾İ£¬ÓÉÓÚÊÇÒıÓÃ´«µİ£¬Òò´ËÕâ¸öº¯Êı²»ÓÃ·µ»ØÖµÒ²¿ÉÒÔ
+	 * æ•°ç»„å¢åŠ ä¸€ä¸ªå®¹é‡.
+	 * å¾€æŒ‡å®šæ•°ç»„arrayå°¾ç«¯æ’å…¥ä¸€ä¸ªå€¼ä¸ºvalueçš„æ•°æ®ï¼Œç”±äºæ˜¯å¼•ç”¨ä¼ é€’ï¼Œå› æ­¤è¿™ä¸ªå‡½æ•°ä¸ç”¨è¿”å›å€¼ä¹Ÿå¯ä»¥
 	 *
-	 * @param array [ÒªÀ©ÈİµÄÊı×é]
-	 * @param value [ÌîÈëÀ©Èİ¿Õ¼äµÄÊı¾İ]
-	 * @return ·µ»Ø´æ´¢²éÕÒ½á¹ûµÄÊı×é
+	 * @param array [è¦æ‰©å®¹çš„æ•°ç»„]
+	 * @param value [å¡«å…¥æ‰©å®¹ç©ºé—´çš„æ•°æ®]
+	 * @return è¿”å›å­˜å‚¨æŸ¥æ‰¾ç»“æœçš„æ•°ç»„
 	 */
 	public static int[] insertArray(int[] array, int value) {
 
-		int len = array.length;//ÓÃÀ´»ñÈ¡ÉÏÒ»¸öÊı×éµÄ³¤¶È
+		int len = array.length;//ç”¨æ¥è·å–ä¸Šä¸€ä¸ªæ•°ç»„çš„é•¿åº¦
 
-		int[] arrAdd = new int[len + 1];//ĞÂÊı×éĞèÒª±ä³¤
+		int[] arrAdd = new int[len + 1];//æ–°æ•°ç»„éœ€è¦å˜é•¿
 
-		arrAdd[len] = value;//ÒÔÉÏÒ»¸öÊı×éµÄlenÎªÏÂ±êµÄÔªËØÕıÊÇ¸ÕÌí¼ÓµÄÔªËØ£¬ÆäÖµÊÇvalue
+		arrAdd[len] = value;//ä»¥ä¸Šä¸€ä¸ªæ•°ç»„çš„lenä¸ºä¸‹æ ‡çš„å…ƒç´ æ­£æ˜¯åˆšæ·»åŠ çš„å…ƒç´ ï¼Œå…¶å€¼æ˜¯value
 
-		for (int index = 0; index < len; index++) {//ÏÈ°Ñ¾ÉÖµ´«µİ¹ıÈ¥,
+		for (int index = 0; index < len; index++) {//å…ˆæŠŠæ—§å€¼ä¼ é€’è¿‡å»,
 			arrAdd[index] = array[index];
 		}
 
-		array = arrAdd;// ¸³ÖµÍê±Ïºó£¬°ÑÇ°Ò»¸öÊı×éÃûÖ¸ÏòĞÂÉú³ÉµÄÊı×é£¬ÕâÑù¾ÍĞÎ³ÉÁË±Õ»·
+		array = arrAdd;// èµ‹å€¼å®Œæ¯•åï¼ŒæŠŠå‰ä¸€ä¸ªæ•°ç»„åæŒ‡å‘æ–°ç”Ÿæˆçš„æ•°ç»„ï¼Œè¿™æ ·å°±å½¢æˆäº†é—­ç¯
 
 		return array;
 	}
