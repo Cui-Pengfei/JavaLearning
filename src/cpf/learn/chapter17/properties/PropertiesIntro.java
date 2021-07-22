@@ -19,7 +19,8 @@ package cpf.learn.chapter17.properties;
  * 5.3 getProperty(key)根据键获得值
  * 5.4 setProperty(key,value)设置键值对到Properties对象，如果key值相等，那就会覆盖
  * 5.5 store() 将Properties中的键值对存储到配置文件，参数是OutputStream | Reader，
- *     若是字节流则默认编码是8859-1，若是字符流，需要特定格式可使用OutputStreamReader,不指定格式默认就是utf-8
+ *     若是字节流则默认编码是8859-1(单字节编码)，就是传输字节，最后中文内容都会显示Unicode码值；
+ *     若是字符流，需要特定格式可使用OutputStreamReader,不指定格式默认就是utf-8
  *     注释如果是中文的话，就会保存Unicode编码，而不是中文字符，因此最好用英文注释
  *
  *

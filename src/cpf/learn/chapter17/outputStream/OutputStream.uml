@@ -3,69 +3,74 @@
   <ID>JAVA</ID>
   <OriginalElement>java.io.OutputStream</OriginalElement>
   <nodes>
-    <node x="373.25" y="168.0">java.io.OutputStream</node>
-    <node x="709.0" y="252.0">java.io.ByteArrayOutputStream</node>
-    <node x="463.25" y="84.0">java.io.Closeable</node>
+    <node x="375.5" y="168.0">java.io.OutputStream</node>
+    <node x="454.0" y="252.0">java.io.ByteArrayOutputStream</node>
+    <node x="313.5" y="84.0">java.io.Closeable</node>
+    <node x="227.00000000000003" y="336.0">java.net.SocketOutputStream</node>
     <node x="236.00000000000003" y="252.0">java.io.FileOutputStream</node>
     <node x="0.0" y="252.0">java.io.ObjectOutputStream</node>
-    <node x="237.75000000000003" y="0.0">java.lang.AutoCloseable</node>
-    <node x="311.25" y="84.0">java.io.Flushable</node>
-    <node x="454.0" y="252.0">java.io.BufferedOutputStream</node>
+    <node x="164.00000000000003" y="0.0">java.lang.AutoCloseable</node>
+    <node x="718.0" y="252.0">java.io.BufferedOutputStream</node>
+    <node x="465.5" y="84.0">java.io.Flushable</node>
   </nodes>
   <notes />
   <edges>
     <edge source="java.io.ObjectOutputStream" target="java.io.OutputStream">
       <point x="54.0" y="-17.0" />
       <point x="162.0" y="222.0" />
-      <point x="393.25" y="222.0" />
+      <point x="395.5" y="222.0" />
       <point x="-60.0" y="17.0" />
     </edge>
     <edge source="java.io.FileOutputStream" target="java.io.OutputStream">
       <point x="0.0" y="-17.0" />
       <point x="335.0" y="232.0" />
-      <point x="433.25" y="232.0" />
+      <point x="435.5" y="232.0" />
       <point x="-20.0" y="17.0" />
-    </edge>
-    <edge source="java.io.ByteArrayOutputStream" target="java.io.OutputStream">
-      <point x="0.0" y="-17.0" />
-      <point x="831.0" y="222.0" />
-      <point x="513.25" y="222.0" />
-      <point x="60.0" y="17.0" />
     </edge>
     <edge source="java.io.ObjectOutputStream" target="java.lang.AutoCloseable">
       <point x="-54.0" y="-17.0" />
       <point x="54.0" y="59.0" />
-      <point x="280.25" y="59.0" />
+      <point x="206.50000000000003" y="59.0" />
       <point x="-42.5" y="17.0" />
     </edge>
+    <edge source="java.io.ByteArrayOutputStream" target="java.io.OutputStream">
+      <point x="0.0" y="-17.0" />
+      <point x="576.0" y="232.0" />
+      <point x="475.5" y="232.0" />
+      <point x="20.0" y="17.0" />
+    </edge>
     <edge source="java.io.OutputStream" target="java.io.Closeable">
-      <point x="40.0" y="-17.0" />
-      <point x="493.25" y="143.0" />
-      <point x="529.25" y="143.0" />
+      <point x="-40.0" y="-17.0" />
+      <point x="415.5" y="143.0" />
+      <point x="379.5" y="143.0" />
+      <point x="0.0" y="17.0" />
+    </edge>
+    <edge source="java.net.SocketOutputStream" target="java.io.FileOutputStream">
+      <point x="0.0" y="-17.0" />
       <point x="0.0" y="17.0" />
     </edge>
     <edge source="java.io.BufferedOutputStream" target="java.io.OutputStream">
       <point x="0.0" y="-17.0" />
-      <point x="571.5" y="232.0" />
-      <point x="473.25" y="232.0" />
-      <point x="20.0" y="17.0" />
+      <point x="835.5" y="222.0" />
+      <point x="515.5" y="222.0" />
+      <point x="60.0" y="17.0" />
     </edge>
     <edge source="java.io.Closeable" target="java.lang.AutoCloseable">
       <point x="0.0" y="-17.0" />
-      <point x="529.25" y="59.0" />
-      <point x="365.25" y="59.0" />
+      <point x="379.5" y="59.0" />
+      <point x="291.5" y="59.0" />
       <point x="42.5" y="17.0" />
     </edge>
     <edge source="java.io.OutputStream" target="java.io.Flushable">
-      <point x="-40.0" y="-17.0" />
-      <point x="413.25" y="143.0" />
-      <point x="377.25" y="143.0" />
+      <point x="40.0" y="-17.0" />
+      <point x="495.5" y="143.0" />
+      <point x="531.5" y="143.0" />
       <point x="0.0" y="17.0" />
     </edge>
   </edges>
-  <settings layout="Hierarchic Group" zoom="0.9506680369989723" x="476.5" y="143.0" />
+  <settings layout="Hierarchic Group" zoom="0.9732785200411099" x="476.5" y="185.0" />
   <SelectedNodes>
-    <node>java.io.OutputStream</node>
+    <node>java.net.SocketOutputStream</node>
   </SelectedNodes>
   <Categories />
   <SCOPE>All</SCOPE>

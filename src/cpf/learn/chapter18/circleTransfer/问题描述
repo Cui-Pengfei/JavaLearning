@@ -1,0 +1,11 @@
+写代码时总是存在一个问题：
+在两个端口交流过程中，如果想要循环交流，
+就不得不在发出信息后，结束此次输出，但是下次想要发信息时，被告知已结束输出，
+这个问题只有当使用BufferedWriter时才能解决，因为规定BufferedWriter的读写标志是newLine(),
+而不是socket.shutdownIn[Out]put;
+
+这一点我一直模模糊糊的，在这里搞清楚:
+1.使用bufferedWriter传输
+2.使用OutputStreamWriter传输
+3.使用BufferedOutputStream传输
+4.使用SocketOutputStream传输

@@ -28,10 +28,8 @@ public class StoreContent{
 
 		/*如果以字节流形式写入内容，那么键值对里的中文也会以Unicode码值存储*/
 		//properties.store(new FileOutputStream(file),"这是保存配置信息到文件");
-
-
-
 		System.out.println("保存配置信息完毕！");
-
 	}
+
+
 }
