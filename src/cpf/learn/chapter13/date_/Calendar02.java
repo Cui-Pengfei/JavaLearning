@@ -1,6 +1,5 @@
 package cpf.learn.chapter13.date_;
 
-import cpf.learn.myTool.ClassAbout;
 
 import java.util.Calendar;
 
@@ -11,7 +10,7 @@ import java.util.Calendar;
 public class Calendar02{
 	public static void main(String[] args){
 		Calendar calendar = Calendar.getInstance();//看来默认获得的就是罗马日历
-		System.out.println(ClassAbout.getClassName(calendar));//GregorianCalendar 罗马日历
+		System.out.println(calendar.getClass().getSimpleName());//GregorianCalendar 罗马日历
 		System.out.println("calendar = " + calendar);
 
 		System.out.println("年：" + calendar.get(Calendar.YEAR));

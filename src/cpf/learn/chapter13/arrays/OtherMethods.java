@@ -1,7 +1,6 @@
 package cpf.learn.chapter13.arrays;
 
 import cpf.learn.myTool.Array;
-import cpf.learn.myTool.ClassAbout;
 
 import java.util.Arrays;
 import java.util.Comparator;
@@ -76,7 +75,7 @@ public class OtherMethods{
 		System.out.println("================ 4.asList() ================");
 		List asList = Arrays.asList(arrays);
 		System.out.println(asList.size());
-		System.out.println(ClassAbout.getClassName(asList));
+		System.out.println(asList.getClass().getSimpleName());
 
 
 	}//end main

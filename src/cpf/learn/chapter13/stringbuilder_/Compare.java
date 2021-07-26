@@ -1,6 +1,5 @@
 package cpf.learn.chapter13.stringbuilder_;
 
-import cpf.learn.myTool.ClassAbout;
 
 /**
  * @author CPF 创建于： 2021/6/17 23:44
@@ -35,7 +34,7 @@ abstract class CacheType{
 		long beginTime = System.currentTimeMillis();
 		type.job();
 		long endTime = System.currentTimeMillis();
-		String className = ClassAbout.getClassName(type);//调用工具类
+		String className = type.getClass().getSimpleName();//调用工具类
 		System.out.println(className +
 				"花费时间：" + (endTime - beginTime));
 		return endTime - beginTime;

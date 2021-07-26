@@ -1,4 +1,4 @@
-package cpf.learn.learnClass;
+package cpf.learn.chapter19.ClassIntro.learnClass;
 
 /**
  * 学习 Class对象

@@ -1,4 +1,4 @@
-package cpf.learn.learnClass;
+package cpf.learn.chapter19.ClassIntro.learnClass;
 
 import java.lang.reflect.Field;
 
@@ -9,7 +9,7 @@ import java.lang.reflect.Field;
 public class ClassMethod{
 	public static void main(String[] args) throws ClassNotFoundException,
 			IllegalAccessException, InstantiationException, NoSuchFieldException{
-		String classAllPath = "cpf.learn.learnClass.Car";
+		String classAllPath = "cpf.learn.chapter19.ClassIntro.learnClass.Car";
 		Class<?> aClass = Class.forName(classAllPath);//1.这是一个Class对象 ，对应是Car类
 
 		System.out.println("2. " + aClass);//2.输出全类名，到底是哪一个类的类对象

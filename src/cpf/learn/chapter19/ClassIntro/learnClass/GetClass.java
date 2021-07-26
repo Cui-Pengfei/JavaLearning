@@ -1,4 +1,4 @@
-package cpf.learn.learnClass;
+package cpf.learn.chapter19.ClassIntro.learnClass;
 
 /**
  * 获取 Class 对象的6种方式
@@ -6,7 +6,7 @@ package cpf.learn.learnClass;
 public class GetClass{
 	public static void main(String[] args) throws ClassNotFoundException{
 		// 1. Class.forName("类的全路径")
-		String classAllPath = "cpf.learn.learnClass.Car";
+		String classAllPath = "cpf.learn.chapter19.ClassIntro.learnClass.Car";
 		Class<?> cls1 = Class.forName(classAllPath);
 		System.out.println(cls1);
 
@@ -20,7 +20,7 @@ public class GetClass{
 		System.out.println(cls3);
 
 		// 4. 通过类加载器（有四种类加载器）来获得类的Class对象
-		ClassLoader classLoader = car.getClass().getClassLoader();
+		ClassLoader classLoader = Car.class.getClassLoader();
 		Class<?> cls4 = classLoader.loadClass(classAllPath);
 		System.out.println(cls4);
 
