@@ -1,0 +1,18 @@
+查看端口：(在dos)
+netstat -an  | more
+netstat -anb | more 具体查看有哪些应用在使用什么端口
+
+
+
+一、TCP
+InetAddress
+ServerSocket
+Socket
+shutdownInput
+shutdownOutput
+close的各种条件
+
+二、UDP
+DatagramPacket数据报，一帧最大64KB
+DatagramSocket数据连接
+发送方和接收方可互换 send() receive()
