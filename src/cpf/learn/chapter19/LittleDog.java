@@ -6,5 +6,6 @@ package cpf.learn.chapter19;
  */
 public class LittleDog extends Dog{
 	public LittleDog(){
+
 	}
 }

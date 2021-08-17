@@ -9,8 +9,8 @@ package cpf.learn.chapter11.annotation;
  * 相当于嵌入代码中能被编译器识别的补充信息
  * 3.在java se中，注解的使用目的比较简单，标记过时的功能、忽略警告等
  *   在java ee中，注解占据了更重要的角色，例如用来配置应用程序的任何切面、
- *   代替java ee旧版所遗留的冗余代码河XML配置等
- * 4.使用Annotatiopn要在其前面加 @ 符号，并把该Annotation当成修饰符来使用，
+ *   代替java ee旧版所遗留的冗余代码、XML配置等
+ * 4.使用Annotation要在其前面加 @ 符号，并把该Annotation当成修饰符来使用，
  *   用于修饰它所支持的程序元素
  * 5.三个基本的Annotation
  * @Override : 限定某个方法是重写父类的方法

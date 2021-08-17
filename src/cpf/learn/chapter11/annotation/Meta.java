@@ -1,7 +1,5 @@
 package cpf.learn.chapter11.annotation;
 
-import com.sun.deploy.security.ValidationState;
-
 import java.lang.annotation.Documented;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
@@ -32,4 +30,5 @@ import static java.lang.annotation.ElementType.*;
 
 @Documented //表示我自定义的Meta注解在使用过后，可以写入javadoc文档
 public @interface Meta{
+	/*注解的类型是@interface*/
 }
